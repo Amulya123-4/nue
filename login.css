@@ -1,0 +1,211 @@
+body {
+
+  background: linear-gradient(to right, black, #182848);
+
+  margin: 0;
+
+  padding: 0;
+
+  min-height: 100vh;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  color:black; 
+
+}
+
+.dashboard-container {
+
+  max-width: 900px;
+
+  margin: 40px auto;
+
+  padding: 20px;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+.dashboard-container h1 {
+
+  margin-bottom: 10px;
+
+  color: #4b6cb7;
+
+}
+
+
+
+.brand-details-form, .applications {
+
+  background: #fff;
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+  margin-bottom: 30px;
+
+}
+
+
+
+.brand-details-form form label {
+
+  display: block;
+
+  margin-top: 15px;
+
+  font-weight: 600;
+
+  color: #333;
+
+}
+
+
+
+.brand-details-form form input[type="text"],
+
+.brand-details-form form textarea,
+
+.brand-details-form form input[type="file"] {
+
+  width: 100%;
+
+  padding: 10px;
+
+  margin-top: 6px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+
+  font-size: 14px;
+
+  color: black;
+
+}
+
+
+
+.brand-details-form form button {
+
+  margin-top: 20px;
+
+  padding: 12px 25px;
+
+  background-color: #4b6cb7;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 4px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+
+
+.brand-details-form form button:hover {
+
+  background-color: #3a5498;
+
+}
+
+
+
+.applications table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+}
+
+
+
+.applications th, .applications td {
+
+  padding: 12px 10px;
+
+  border-bottom: 1px solid #ddd;
+
+  text-align: left;
+
+}
+
+
+
+.applications th {
+
+  background-color: #f0f4f8;
+
+  color: #4b6cb7;
+
+}
+
+
+
+.applications button {
+
+  margin-right: 8px;
+
+  padding: 6px 12px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  border: none;
+
+  border-radius: 4px;
+
+  color: black
+
+}
+
+
+
+.applications button:hover {
+
+  opacity: 0.85;
+
+}
+
+
+
+.applications button:nth-child(1) {
+
+  background-color: #6c757d; /* View */
+
+  color: black;
+
+}
+
+
+
+.applications button:nth-child(2) {
+
+  background-color: #28a745; /* Approve */
+
+  color: black;
+
+}
+
+
+
+.applications button:nth-child(3) {
+
+  background-color: #dc3545; /* Reject */
+
+  color: black;
+
+}

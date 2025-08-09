@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Customer Dashboard</title>
+  <link rel="stylesheet" href="customer.css" />
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <h1>Welcome, <span id="customerName">Customer</span></h1>
+    <p>Manage your collaborations, resell applications, and brand details below.</p>
+
+    <section class="brand-details">
+      <h2>Your Brand Details</h2>
+      <form id="brandForm">
+        <label for="brandName">Brand Name</label>
+        <input type="text" id="brandName" name="brandName" placeholder="Enter your brand name" required />
+
+        <label for="brandDescription">Brand Description</label>
+        <textarea id="brandDescription" name="brandDescription" rows="3" placeholder="Brief description"></textarea>
+
+        <label for="brandWebsite">Website (optional)</label>
+        <input type="url" id="brandWebsite" name="brandWebsite" placeholder="https://example.com" />
+
+        <button type="submit">Save Brand Details</button>
+      </form>
+    </section>
+
+    <section class="collaboration-requests">
+      <h2>Collaboration Requests</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Business Name</th>
+            <th>Contact</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>LoopWear</td>
+            <td>LoopWear@abc.com</td>
+            <td>Pending</td>
+            <td><button>View</button> <button>Cancel</button></td>
+          </tr>
+          <!-- More rows can be dynamically added here -->
+        </tbody>
+      </table>
+    </section>
+
+    <section class="resell-applications">
+      <h2>Resell Applications</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product / Brand</th>
+            <th>Application Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>FashionX Apparel</td>
+            <td>2025-08-01</td>
+            <td>Approved</td>
+            <td><button>View</button></td>
+          </tr>
+          <!-- More rows can be dynamically added here -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+</body>
+</html>

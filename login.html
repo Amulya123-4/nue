@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Partner Dashboard</title>
+  <link rel="stylesheet" href="login.css" />
+      <link rel="icon" href="./3.logo.jpeg">
+
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <h1>Welcome, [Partner Name]</h1>
+    <p style="color: #fff;">Manage your brand details and collaboration requests here.</p>
+
+    <section class="brand-details-form">
+      <h2>Update Brand / Business Details</h2>
+      <form id="brandForm" action="#" method="POST" enctype="multipart/form-data">
+        <label for="businessName">Business Name</label>
+        <input type="text" id="businessName" name="businessName" placeholder="Your business name" required />
+
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" placeholder="City, Country" required />
+
+        <label for="services">Services Offered</label>
+        <textarea id="services" name="services" placeholder="Describe your services" rows="4" required></textarea>
+
+        <label for="marketingMaterials">Upload Marketing Materials (PDF, Images)</label>
+        <input type="file" id="marketingMaterials" name="marketingMaterials" multiple accept=".pdf,image/*" />
+
+        <button type="submit">Save Details</button>
+      </form>
+    </section>
+
+    <section class="applications">
+      <h2>Collaboration / Resell Applications</h2>
+      <p>View and manage incoming applications from customers.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Applicant Name</th>
+            <th>Email</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example row -->
+          <tr>
+            <td>John Doe</td>
+            <td>john@example.com</td>
+            <td>Reseller</td>
+            <td>Pending</td>
+            <td>
+              <button>View</button>
+              <button>Approve</button>
+              <button>Reject</button>
+            </td>
+          </tr>
+          <!-- More rows dynamically populated -->
+        </tbody>
+      </table>
+    </section>
+
+  </div>
+
+</body>
+</html>

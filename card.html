@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Business & Customer Login — Side by Side</title>
+      <link rel="icon" href="./3.logo.jpeg">
+
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+  <main class="wrap ">
+    <!-- Business Login -->
+    <section class="card" aria-labelledby="business-title">
+      <div class="meta" style="justify-content:space-between">
+        <div style="display:flex;gap:12px;align-items:center">
+          <div class="logo">B</div>
+          <div>
+            <h2 id="business-title">Business Login</h2>
+            <p class="lead">Sign in to manage your company dashboard, invoices and team access.</p>
+          </div>
+        </div>
+        <div class="note">Not a business? Use Customer form.</div>
+      </div>
+      <form id="businessForm" onsubmit="handleSubmit(event,'business')" novalidate>
+        <div>
+          <label for="biz-email">Business Email</label>
+          <input id="biz-email" name="email" type="email" placeholder="name@company.com" required />
+        </div>
+        <div>
+          <label for="biz-id">Company ID / Domain</label>
+          <input id="biz-id" name="company" type="text" placeholder="company-name or domain" required />
+        </div>
+        <div>
+          <label for="biz-pass">Password</label>
+          <div style="display:flex;gap:8px;align-items:center">
+            <input id="biz-pass" name="password" type="password" placeholder="Enter password" required />
+          </div>
+        </div>
+        <div class="actions">
+          <label class="small"><input type="checkbox" name="remember" /> Remember me</label>
+          <a class="muted-link" href="#">Forgot password?</a>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;margin-top:8px">   
+          <!-- <button class="btn" type="submit">Sign in as Business</button>
+          <button class="btn ghost" type="button">Customer as Partnership</button> -->
+          <a href="index.html" class="btn-login">Sign in as Business</a>
+          <a href="login.html" class="btn-login">Customer as Partnership</a>
+        </div>
+      </form>
+    </section>
+    <!-- Customer Login -->
+    <section class="card" aria-labelledby="customer-title">
+      <div class="meta" style="justify-content:space-between">
+        <div style="display:flex;gap:12px;align-items:center">
+          <div class="logo" style="background:linear-gradient(135deg,#06b6d4,#0ea5a4)">C</div>
+          <div>
+            <h2 id="customer-title">Customer Login</h2>
+            <p class="lead">Sign in to track orders, manage your profile, or contact support.</p>
+          </div>
+        </div>
+        <div class="note">First time? Create account</div>
+      </div>
+      <form id="customerForm" onsubmit="handleSubmit(event,'customer')" novalidate>
+        <div>
+          <label for="cust-username">Email or Username</label>
+          <input id="cust-username" name="username" type="text" placeholder="you@example.com or username" required />
+        </div>
+        <div>
+          <label for="cust-pass">Password</label>
+          <div style="display:flex;gap:8px;align-items:center">
+            <input id="cust-pass" name="password" type="password" placeholder="Password" required />    
+          </div>
+        </div>
+        <div class="actions">
+          <label class="small"><input type="checkbox" name="remember" /> Keep me signed in</label>
+          <a class="muted-link" href="#">Forgot password?</a>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;margin-top:8px">
+
+          <!-- <button class="btn btn-login" type="submit">Sign in as Customer</button> -->
+          <a href="navbar.html" class="btn-login">Sign in as Customer</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

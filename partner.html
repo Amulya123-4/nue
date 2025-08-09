@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Methods</title>
+    <link rel="stylesheet" href="payment.css"/>
+</head>
+<script>
+function togglePaymentFields() {
+  const selectedPayment = document.querySelector('input[name="payment"]:checked').value;
+  const onlineFields = document.getElementById('online-payment-fields');
+  const codFields = document.getElementById('cod-fields');
+
+  if (selectedPayment === 'online') {
+    onlineFields.style.display = 'block';
+    codFields.style.display = 'none';
+  } else if (selectedPayment === 'cod') {
+    onlineFields.style.display = 'none';
+    codFields.style.display = 'block';
+  } else {
+    onlineFields.style.display = 'none';
+    codFields.style.display = 'none';
+  }
+}
+</script>
+
+<body>
+    <!-- <div class="payment-methods">
+  <h2>Select Payment Method</h2>
+
+  <label class="payment-option">
+    <input type="radio" name="payment" value="online" checked>
+    <span class="custom-radio"></span>
+    <div class="payment-info">
+      <strong>Online Payment</strong>
+      <p>Credit/Debit Card, Net Banking, UPI, Wallets</p>
+    </div>
+  </label>
+
+  <label class="payment-option">
+    <input type="radio" name="payment" value="cod">
+    <span class="custom-radio"></span>
+    <div class="payment-info">
+      <strong>Cash on Delivery (COD)</strong>
+      <p>Pay with cash when you receive your order</p>
+    </div>
+  </label>
+
+  <label class="payment-option">
+    <input type="radio" name="payment" value="paypal">
+    <span class="custom-radio"></span>
+    <div class="payment-info">
+      <strong>PayPal</strong>
+      <p>Secure payment via your PayPal account</p>
+    </div>
+  </label>
+
+  <label class="payment-option">
+    <input type="radio" name="payment" value="other">
+    <span class="custom-radio"></span>
+    <div class="payment-info">
+      <strong>Other Methods</strong>
+      <p>Bank Transfer, EMI options, etc.</p>
+    </div>
+  </label>
+</div> -->
+
+<div class="payment-methods">
+  <h2>Select Payment Method</h2>
+
+  <!-- Online Payment -->
+  <label class="payment-option">
+    <input type="radio" name="payment" value="online" checked onchange="togglePaymentFields()">
+    <span class="custom-radio"></span>
+    <div class="payment-info">
+      <strong>Online Payment</strong>
+      <p>Credit/Debit Card, UPI</p>
+    </div>
+  </label>
+
+  <!-- Cash on Delivery -->
+  <label class="payment-option">
+    <input type="radio" name="payment" value="cod" onchange="togglePaymentFields()">
+    <span class="custom-radio"></span>
+    <div class="payment-info">
+      <strong>Cash on Delivery (COD)</strong>
+      <p>Pay with cash when you receive your order</p>
+    </div>
+  </label>
+
+  <!-- PayPal -->
+  <label class="payment-option">
+    <input type="radio" name="payment" value="paypal" onchange="togglePaymentFields()">
+    <span class="custom-radio"></span>
+    <div class="payment-info">
+      <strong>PayPal</strong>
+      <p>Secure payment via your PayPal account</p>
+    </div>
+  </label>
+
+  <!-- Other -->
+  <label class="payment-option">
+    <input type="radio" name="payment" value="other" onchange="togglePaymentFields()">
+    <span class="custom-radio"></span>
+    <div class="payment-info">
+      <strong>Other Methods</strong>
+      <p>Bank Transfer, EMI options, etc.</p>
+    </div>
+  </label>
+
+  <!-- Online Payment Fields -->
+  <div id="online-payment-fields" class="payment-details">
+    <h3>Enter Payment Details</h3>
+    <label>Card Number: <input type="text" placeholder="1234 5678 9012 3456" /></label>
+    <label>Expiry Date: <input type="text" placeholder="MM/YY" /></label>
+    <label>CVV: <input type="password" placeholder="123" /></label>
+    <label>UPI ID: <input type="text" placeholder="yourname@bank" /></label>
+  </div>
+
+  <!-- COD Address Fields -->
+  <div id="cod-fields" class="payment-details" style="display: none;">
+    <h3>Delivery Address</h3>
+    <label>Full Name: <input type="text" placeholder="John Doe" /></label>
+    <label>Address: <input type="text" placeholder="123 Street, City" /></label>
+    <label>PIN Code: <input type="text" placeholder="123456" /></label>
+    <label>Phone Number: <input type="text" placeholder="9876543210" /></label>
+  </div>
+    <center><button class="btn success">submit</button></center>
+</div>
+
+
+</body>
+</html>

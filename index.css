@@ -1,0 +1,253 @@
+@media (max-width: 575.98px) {
+    body {
+        padding: 10px;
+    }
+    #myform {
+        padding: 1rem;
+    }
+    #myform h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .mobile-field {
+        flex-direction: column;
+    }
+    .mobile-field select,
+    .mobile-field input {
+        width: 100%;
+    }
+}
+
+/* Small Devices (≥ 576px and < 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #myform {
+        max-width: 90%;
+    }
+    .mobile-field select {
+        width: 40%;
+    }
+    .mobile-field input {
+        width: 60%;
+    }
+}
+
+/* Medium Devices (≥ 768px and < 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #myform {
+        max-width: 500px;
+    }
+}
+
+/* Large Devices (≥ 992px and < 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #myform {
+        max-width: 550px;
+    }
+}
+
+/* Extra Large Devices (≥ 1200px) */
+@media (min-width: 1200px) {
+    #myform {
+        max-width: 600px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* background-color: #fff; */
+    padding: 20px;
+    background: linear-gradient(to right, black, #182848);
+
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Take full available width */
+    margin: 0 auto;
+}
+
+#myform {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 550px; /* Increased from 400px */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 2rem;
+    border-radius: 10px;
+    background: #fff;
+}
+
+#myform h1 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+}
+
+#myform label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#myform input,
+#myform select {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mobile-field {
+    display: flex;
+    gap: 10px;
+}
+
+.mobile-field select {
+    width: 35%;
+}
+
+.mobile-field input {
+    width: 65%;
+}
+
+#myform button {
+    margin: 20px 0;
+    background-color: #ffd814;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#myform button:hover {
+    background-color: #f7bb4b;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.verfy, .already, .by {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.already a, .by a {
+    text-decoration: none;
+    color: #0066c0;
+}
+
+.already a:hover, .by a:hover {
+    text-decoration: underline;
+}
+
+.info {
+    font-size: 13px;
+    color: #333;
+    margin-top: -8px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#terms {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+#terms a {
+    text-decoration: none;
+    color: #0066c0;
+}
+
+#terms a:hover {
+    text-decoration: underline;
+}
+.container button {
+    width: 100%;
+}
+
+
+footer p {
+    font-size: 13px;
+    color: #666;
+}
+/* btn */
+.btn-login {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background-color: #4b6cb7;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #3a5498;
+}
+btn-login {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background-color: #4b6cb7;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #3a5498;
+}
+
+
+
+
+
